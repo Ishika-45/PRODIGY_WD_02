@@ -4,11 +4,25 @@
     box-sizing: border-box;
     outline: none;
 }
+.container{
+    /* From https://css.glass */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 
+/* background: rgba(255, 255, 255, 0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(255, 255, 255, 0.3); */
+}
 body{
-    /* background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3NrOTc5MS1pbWFnZS1rd3Z1amE5Ni5qcGc.jpg');
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3NrOTc5MS1pbWFnZS1rd3Z1amE5Ni5qcGc.jpg');
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     background-color: black;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -24,7 +38,7 @@ body{
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -36,7 +50,8 @@ body{
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    background-color: black;
+    /* background-color: black; */
+    background: transparent;
     padding: 20px;
     display: flex;
     justify-content: center;

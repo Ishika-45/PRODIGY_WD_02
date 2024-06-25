@@ -5,7 +5,7 @@
         const minute = document.getElementsByClassName("minute")[0];
         const second = document.getElementsByClassName("sec")[0];
         const centiSecond = document.getElementsByClassName("msec")[0];
-        const laps = document.getElementById("laps");
+        const laps = document.getElementsByClassName("laps")[0];
 
 
         let isPlay = false;
