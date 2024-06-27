@@ -23,7 +23,7 @@ body{
     background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3NrOTc5MS1pbWFnZS1rd3Z1amE5Ni5qcGc.jpg');
     background-size: cover;
     background-position: center;
-    background-color: black;
+    /* background-color: black; */
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -39,6 +39,7 @@ body{
     height: 260px;
     border-radius: 50%;
     /* background-color: #fff; */
+    background: transparent;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -46,9 +47,26 @@ body{
     box-shadow: 0 0 10px rgba(213, 8, 8, 1);
 }
 
+.animation-bg{
+    background: linear-gradient(-45deg, #ee7752, orange, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+}
 .inner-circle{
-    width: 240px;
-    height: 240px;
+    width: 270px;
+    height: 230px;
     border-radius: 50%;
     /* background-color: black; */
     background: transparent;
@@ -87,12 +105,15 @@ body{
     height: 50px;
     border-radius: 50%;
     border: 2px solid white;
-    background-color: aqua;
-    color: red;
+    /* background-color: aqua; */
+    background: transparent;
+    color: black;
     cursor: pointer;
 }
 .button:hover{
-    background-color: #00bfff;
+    /* background-color: #00bfff; */
+    background: transparent;
+    background-color: white;
     color:pink;
 }
 

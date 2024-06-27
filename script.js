@@ -6,6 +6,7 @@
         const second = document.getElementsByClassName("sec")[0];
         const centiSecond = document.getElementsByClassName("msec")[0];
         const laps = document.getElementsByClassName("laps")[0];
+        const bg = document.getElementsByClassName("outer-circle")[0];
 
 
         let isPlay = false;
@@ -26,6 +27,7 @@
         const play = () =>{
             if(!isPlay  && !isReset){
                 playButton.innerHTML = "Pause";
+                bg.classList.add("animation-bg");
                 min =  setInterval(() => {
                     minute.innerHTML = `${++minCounter} : `;
                         }, 60* 1000);
@@ -51,6 +53,7 @@
                 clearInterval(centiSec);
                 isPlay = false;
                 isReset = false;
+                bg.classList.remove("animation-bg")
             }
             togglebutton();
         }
@@ -89,6 +92,7 @@
             laps.innerHTML = '';
             laps.append(clearButton);
             clearButton.classList.add("hidden");
+            lapItem = 0;
 
         }
 
